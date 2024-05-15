@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  background-color: rgb(20,20,20);
+  margin: 0;
+  padding:0;
+  font-family: Poppins;
+  color:white;
+}
+
+.logo{
+  display:flex;
+  font-size: 1.5rem;
+  font-weight: light;
+  
+  margin: 1rem;
+}
+
+.logo .green{
+  color:#00FF57;
+  margin: 0 0.3rem;
+  text-shadow: 2px 2px 10px green;
+}
+
+.return{
+  margin-left: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.title{
+  width: min-content;
+  font-size: 5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+p{
+  font-size: 2rem;
+  margin: 0 3rem;
+  color: grey;
+}
+
+.date{
+  font-size: 1.5rem;
+  color:grey;
+  display:flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+.cont{
+  display:flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dd{
+  width: min-content;
+  height: min-content;
+  padding: 1rem;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  font-family: Poppins;
+  padding-right: 3rem;
+  font-weight: bold;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+}
+
+
+.posts{
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.post{
+  width: 90vw;
+  background-color: black;
+  padding: 2rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 1rem 0;
+  transition: 500ms all ease;
+}
+
+.post:hover{
+  border: 1px solid #00FF57;
+}
+
+.post-title{
+  font-size: 1.5rem;
+  font-weight: thin;
+}
+
+.post-date{
+  font-size: 1.1rem;
+  color: grey;
+  font-weight: bold;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+  body {
+    
+  }
+  .title{
+    font-size: 3rem;
+  }
+ 
+  .post{
+    padding: 1rem;
+    width: 80%;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}

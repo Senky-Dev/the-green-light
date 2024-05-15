@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>The Green Light</title>
+</head>
+<link rel="stylesheet" href="blogs.css">
+<body>
+<div class = "logo">
+  <div class="the">The</div>
+  <div class="green">Green</div>
+  <div class="light">Light</div>
+</div>
+<a class="return" href="index.html"> < Home </a>
+<div class="cont">
+<div class="title">Blogs</div>
+<select class="dd" onchange="refresh(this.value)">
+  <option value="books">Books</option>
+  <option value="coding">Coding</option>
+  <option value="philosophy">Philosophy</option>
+</select>
+</div>
+<div class="posts">
+{% let tag = "books" %}
+{% for blog in blogs %}
+    
+      <a class="post hidden" href="{{blog.path}}" data-sr="{{loop.index/5}}" data-tag="{{blog.tag}}">
+        <div class="post-title">{{blog.title}}</div>
+        <div class="post-date">{{blog.date}}</div>
+      </a>
+{% endfor %}
+</div>
+<script defer>
+let blogs_count = Math.trunc( (document.querySelectorAll("[data-tag]").length)/4 );
+function refresh(tag){
+  console.log(tag);
+  let blogs = document.querySelectorAll("[data-tag]");
+  blogs.forEach((e) => {
+    if(e.getAttribute("data-tag") === tag){
+      e.classList.remove("hidden")
+    }
+    else{
+      e.classList.add("hidden")
+    }
+  });
+};
+let currentPage = 0;
+refresh("books")
+
+
+</script>
+</body>
+</html>

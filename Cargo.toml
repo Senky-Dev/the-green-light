@@ -1,0 +1,13 @@
+[package]
+name = "blog-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+askama = "0.12.1"
+femark = "0.1.6"
+gray_matter = "0.2.6"
+markdown = "1.0.0-alpha.17"
+serde = "1.0.201"
+serde_yaml = "0.9"
+tinytemplate = "=1.2.1"
