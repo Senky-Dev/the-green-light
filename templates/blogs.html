@@ -15,7 +15,8 @@
 <select class="dd" onchange="refresh(this.value)">
   <option value="books">Books</option>
   <option value="coding">Coding</option>
-  <option value="philosophy">Philosophy</option>
+  <option value="science">Science</option>
+  <option value="idea" selected>Ideas</option>
 </select>
 </div>
 <div class="posts">
@@ -31,7 +32,6 @@
 <script defer>
 let blogs_count = Math.trunc( (document.querySelectorAll("[data-tag]").length)/4 );
 function refresh(tag){
-  console.log(tag);
   let blogs = document.querySelectorAll("[data-tag]");
   blogs.forEach((e) => {
     if(e.getAttribute("data-tag") === tag){
@@ -43,7 +43,7 @@ function refresh(tag){
   });
 };
 let currentPage = 0;
-refresh("books")
+refresh("idea")
 
 
 </script>
