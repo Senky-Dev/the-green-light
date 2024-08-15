@@ -6,7 +6,7 @@ body{
   background-color: rgb(20,20,20);
   margin: 0;
   padding:0;
-  font-family: Roboto;
+  font-family: Oxygen;
   color:white;
 }
 
@@ -29,14 +29,15 @@ body{
   font-size: 3rem;
   font-weight: bold;
   color: grey;
+  text-decoration: revert;
 }
 
 .title{
   width: min-content;
-  font-size: 5rem;
-  font-weight: 300;
+  font-size: 3.5rem;
+  font-weight: bold;
   text-align: center;
-  font-family:Roboto;
+  font-family:oxygen;
 }
 
 p{
